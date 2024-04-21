@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite 1]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test 2(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="miniProjectBySagnikLala.OnlineMobileSearch">
+        <methods>
+          <include name="sortingOptions"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- miniProjectBySagnikLala.OnlineMobileSearch -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+</suite> <!-- Failed suite [Suite 1] -->

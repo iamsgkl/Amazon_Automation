@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-21T17:56:10 IST" name="Suite 1" finished-at="2024-04-21T17:57:16 IST" duration-ms="66286">
+    <groups>
+    </groups>
+    <test started-at="2024-04-21T17:56:10 IST" name="Test 2" finished-at="2024-04-21T17:57:12 IST" duration-ms="62164">
+      <class name="miniProjectBySagnikLala.OnlineMobileSearch">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@2362f559]" started-at="2024-04-21T17:56:10 IST" name="setup" finished-at="2024-04-21T17:56:38 IST" duration-ms="28256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="displayString()[pri:1, instance:miniProjectBySagnikLala.OnlineMobileSearch@2362f559]" started-at="2024-04-21T17:56:38 IST" name="displayString" finished-at="2024-04-21T17:56:54 IST" duration-ms="16524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayString -->
+        <test-method signature="sortingOptions()[pri:2, instance:miniProjectBySagnikLala.OnlineMobileSearch@2362f559]" started-at="2024-04-21T17:56:54 IST" name="sortingOptions" finished-at="2024-04-21T17:56:55 IST" duration-ms="190" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #a\-autoid\-0\-announce
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [106def4d-eb57-4516-a325-503fdb34dc54, findElement {using=id, value=a-autoid-0-announce}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:25156, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17348, moz:profile: C:\Users\2317566\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25156/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 106def4d-eb57-4516-a325-503fdb34dc54]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #a\-autoid\-0\-announce
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [106def4d-eb57-4516-a325-503fdb34dc54, findElement {using=id, value=a-autoid-0-announce}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:25156, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17348, moz:profile: C:\Users\2317566\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25156/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 106def4d-eb57-4516-a325-503fdb34dc54
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at miniProjectBySagnikLala.OnlineMobileSearch.sortingOptions(OnlineMobileSearch.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingOptions -->
+        <test-method signature="newestArrivals()[pri:3, instance:miniProjectBySagnikLala.OnlineMobileSearch@2362f559]" started-at="2024-04-21T17:56:55 IST" name="newestArrivals" finished-at="2024-04-21T17:57:05 IST" duration-ms="10454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newestArrivals -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@2362f559]" started-at="2024-04-21T17:57:05 IST" name="teardown" finished-at="2024-04-21T17:57:12 IST" duration-ms="6656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- miniProjectBySagnikLala.OnlineMobileSearch -->
+    </test> <!-- Test 2 -->
+    <test started-at="2024-04-21T17:56:10 IST" name="Test 1" finished-at="2024-04-21T17:57:13 IST" duration-ms="63524">
+      <class name="miniProjectBySagnikLala.OnlineMobileSearch">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@dd05255]" started-at="2024-04-21T17:56:10 IST" name="setup" finished-at="2024-04-21T17:56:28 IST" duration-ms="18347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="displayString()[pri:1, instance:miniProjectBySagnikLala.OnlineMobileSearch@dd05255]" started-at="2024-04-21T17:56:29 IST" name="displayString" finished-at="2024-04-21T17:56:49 IST" duration-ms="20770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayString -->
+        <test-method signature="sortingOptions()[pri:2, instance:miniProjectBySagnikLala.OnlineMobileSearch@dd05255]" started-at="2024-04-21T17:56:49 IST" name="sortingOptions" finished-at="2024-04-21T17:57:03 IST" duration-ms="13481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingOptions -->
+        <test-method signature="newestArrivals()[pri:3, instance:miniProjectBySagnikLala.OnlineMobileSearch@dd05255]" started-at="2024-04-21T17:57:03 IST" name="newestArrivals" finished-at="2024-04-21T17:57:13 IST" duration-ms="10085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newestArrivals -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@dd05255]" started-at="2024-04-21T17:57:13 IST" name="teardown" finished-at="2024-04-21T17:57:13 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- miniProjectBySagnikLala.OnlineMobileSearch -->
+    </test> <!-- Test 1 -->
+    <test started-at="2024-04-21T17:56:10 IST" name="Test 3" finished-at="2024-04-21T17:57:16 IST" duration-ms="66286">
+      <class name="miniProjectBySagnikLala.OnlineMobileSearch">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@4c178a76]" started-at="2024-04-21T17:56:10 IST" name="setup" finished-at="2024-04-21T17:56:29 IST" duration-ms="19466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="displayString()[pri:1, instance:miniProjectBySagnikLala.OnlineMobileSearch@4c178a76]" started-at="2024-04-21T17:56:29 IST" name="displayString" finished-at="2024-04-21T17:56:50 IST" duration-ms="21020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayString -->
+        <test-method signature="sortingOptions()[pri:2, instance:miniProjectBySagnikLala.OnlineMobileSearch@4c178a76]" started-at="2024-04-21T17:56:50 IST" name="sortingOptions" finished-at="2024-04-21T17:57:04 IST" duration-ms="13348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingOptions -->
+        <test-method signature="newestArrivals()[pri:3, instance:miniProjectBySagnikLala.OnlineMobileSearch@4c178a76]" started-at="2024-04-21T17:57:04 IST" name="newestArrivals" finished-at="2024-04-21T17:57:14 IST" duration-ms="10134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newestArrivals -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:miniProjectBySagnikLala.OnlineMobileSearch@4c178a76]" started-at="2024-04-21T17:57:14 IST" name="teardown" finished-at="2024-04-21T17:57:16 IST" duration-ms="2173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- miniProjectBySagnikLala.OnlineMobileSearch -->
+    </test> <!-- Test 3 -->
+  </suite> <!-- Suite 1 -->
+</testng-results>
